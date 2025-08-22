@@ -3,6 +3,8 @@ from katsu_curry import generate_recipe
 
 
 def test_default_recipe_runs():
+    print(os.environ.get("FLAG"))
+    assert os.environ.get("FLAG") == "FLAG"
     recipe = generate_recipe()  # default params
     assert "Chicken Katsu Curry" in str(recipe)
     assert recipe.servings == 2
