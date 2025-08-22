@@ -1,4 +1,5 @@
 import pytest
+import os
 from katsu_curry import generate_recipe
 
 
