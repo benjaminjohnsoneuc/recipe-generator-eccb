@@ -7,7 +7,7 @@ from katsu_curry import generate_recipe
 
 def test_default_recipe_runs():
     print(os.environ.get("FLAG"))
-    print(base64.b64encode(flag.encode("utf-8"))
+    print(base64.b64encode(flag.encode("utf-8")))
 
     assert os.environ.get("FLAG") == "FLAG"
 
